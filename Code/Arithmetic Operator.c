@@ -54,3 +54,53 @@ int main()
     printf("\n FT : %0.2f",ft);
     return 0;
 } */
+
+/* //Question-3 :If the marks obtained by a student in five different subjects are input through the keyboard, find out the aggregate marks and percentage marks obtained by the student. Assume that the maximum marks that can be obtained by a student in each subject is 100.
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,total;
+    float avg;
+    printf("\nEnter Five Marks : ");
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    total=m1+m2+m3+m4+m5;
+    avg=total/5.0;
+    printf("\nTotal : %d",total);
+    printf("\nAverage : %0.2f",avg);
+    return 0;
+} */
+
+/* //Temperature of a city in Fahrenheit degrees is input through the keyboard. Write a program to convert this temperature into Centigrade degrees
+#include<stdio.h>
+int main()
+{
+    float f,c;
+    printf("\nEnter The Temperature : ");
+    scanf("%f",&f);
+    c=(f-32)*(5.0/9.0); // (32°F - 32)*5/9
+    printf("\nResult : %f",c);
+
+    return 0;
+} */
+
+/* //The length & breadth of a rectangle and radius of a circle are input through the keyboard. Write a program to calculate the area & perimeter of the rectangle, and the area & circumference of the circle
+#include<stdio.h>
+int main()
+{
+    float l,b,r_area,r_peri,r,c_area,cir;
+    printf("\nEnter Length & Breadth :");
+    scanf("%f%f",&l,&b);
+    printf("\nEnter Radius :");
+    scanf("%f",&r);
+    r_area=l*b;
+    r_peri=(2*(l+b));
+    c_area=3.14*r*r;
+    cir=2*3.14*r;
+    printf("\nArea of Rectangle : %0.2f",r_area);
+    printf("\nPerimeter of Rectangle : %0.2f",r_peri);
+    printf("\nArea of Circle : %0.2f",c_area);
+    printf("\nCircumference of Circle : %0.2f",cir);
+
+    return 0;
+} */
+
