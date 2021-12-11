@@ -104,3 +104,79 @@ int main()
     return 0;
 } */
 
+/* //Question-6 :Two numbers are input through the keyboard into two locations C and D. Write a program to interchange the contents of C and D.
+// this interchanging values in programming is called as "swapping" 
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    printf("\nEnter 2 Nos : ");
+    scanf("%d%d", &a, &b); //5 10
+    printf("\n A : %d   B : %d", a, b);
+    a = a + b; //15
+    b = a - b; //5
+    a = a - b; //10
+    printf("\n A : %d   B : %d", a, b);
+    return 0;
+} */
+
+/* //Question-7 :If a five-digit number is input through the keyboard, write a program to calculate the sum of its digits. (Hint: Use the modulus operator ‘%’)
+
+#include<stdio.h>
+int main()
+{
+    int a,b,d,f,sum=0;
+    printf("\nEnter 5 Digit No : ");
+    scanf("%d",&a);//12345
+    b=a/10;//1234
+    sum+=a%10;//5
+    d=b/10;//123
+    sum+=b%10;//4
+    f=d/10;//12
+    sum+=d%10;//3
+    sum+=f/10;//1
+    sum+=f%10;//2
+    printf("\nTotal : %d",sum);
+    return 0;
+} */
+
+/* //Question-8 :If a five-digit number is input through the keyboard, write a program to reverse the number
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e,f,g,h,i,result;
+    printf("\nEnter 5 Digit No : ");
+    scanf("%d",&a);//12345
+    b=a/10;//1234
+    c=a%10;//5
+    d=b/10;//123
+    e=b%10;//4
+    f=d/10;//12
+    g=d%10;//3
+    h=f/10;//1
+    i=f%10;//2
+    result=(c*10000)+(e*1000)+(g*100)+(i*10)+h;
+    printf("\nReverse of 5 Digit No %d is  : %d",a,result);
+
+    return 0;
+} */
+
+// If the four digit number is input through keyboard, write a program to obtain the sum of the firt and last digits
+
+#include<stdio.h>
+
+int main (){
+    int a,b,c,d,e,f,g,h;
+    printf("Print the four digit number : ");
+    scanf ("%d",&a); // 1234
+    b = a/10; // 123
+    c = a%10; //4
+    d = b/10; //12
+    e = b%10; //3
+    f = d/10; //1
+    g = d%10; //2
+    h = f+c;
+    printf("\nSum of digits : %d",h);
+    return 0;
+}
