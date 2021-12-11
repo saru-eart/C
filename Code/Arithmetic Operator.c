@@ -165,7 +165,7 @@ int main()
 // If the four digit number is input through keyboard, write a program to obtain the sum of the firt and last digits
 
 #include<stdio.h>
-
+//
 int main (){
     int a,b,c,d,e,f,g,h;
     printf("Print the four digit number : ");
